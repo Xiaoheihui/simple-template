@@ -1,13 +1,12 @@
 <ul>
 	<% if (this.show) { %>
-		<% for (var i = 0; i < this.users.length; i++) { %>
+		<% for (let i = 0; i < this.languages.length; i++) { %>
 			<li>
-				<a href="<%= this.users[i].url %>">
-					<%= this.users[i].name %>
-				</a>
+				<%= this.languages[i] %>
 			</li>
 		<% } %>
 	<% } else { %>
-		<p>不展示列表</p>
+		<p>无</p>
 	<% } %>
 </ul>
+
